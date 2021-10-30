@@ -1,0 +1,26 @@
+{
+    "description": "Redirects calls to the GMail inbox page to the HTML version.",
+    "manifest_version": 2,
+    "name": "GHtmlMail",
+    "version": "1.0",
+    "homepage_url": "https://github.com/kleiba/ghtmlmail",
+    "icons": {
+	"48": "ghtmlmail-icon-48.png"
+    },
+
+    "permissions": [
+	"webRequest",
+	"webRequestBlocking",
+	"*://mail.google.com/mail/*"
+    ],
+
+    "background": {
+	"scripts": ["ghtmlmail.js"]
+    },
+
+    "browser_specific_settings": {
+	"gecko": {
+	    "strict_min_version": "57.0a1"
+	}
+    }
+}
